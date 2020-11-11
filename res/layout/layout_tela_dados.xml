@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo_app"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:textAppearance="?android:textAppearanceLarge" 
+        android:textColor="#ffffffff" 
+        android:id="@+id/txtNome" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp" 
+        android:layout_marginTop="20dp" 
+        android:text="@string/texto_nome" 
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentTop="true" />
+    <View 
+        android:id="@+id/divisor1" 
+        android:background="@android:color/darker_gray" 
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_below="@id/txtNome" />
+    <EditText 
+        android:id="@+id/edtxtNome" 
+        android:background="@drawable/rounded_corner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_marginRight="20dp" 
+        android:hint="@string/texto_nome" 
+        android:ems="10" 
+        android:layout_below="@id/divisor1" 
+        android:layout_alignLeft="@id/txtNome" 
+        android:inputType="textPersonName" />
+    <TextView 
+        android:textAppearance="?android:textAppearanceLarge" 
+        android:textColor="#ffffffff" 
+        android:id="@+id/txtPeso" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" 
+        android:text="@string/texto_peso" 
+        android:layout_below="@id/edtxtNome" 
+        android:layout_alignLeft="@id/txtNome" />
+    <View 
+        android:id="@+id/divisor2" 
+        android:background="@android:color/darker_gray" 
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_below="@id/txtPeso" />
+    <EditText 
+        android:id="@+id/edtxtPeso" 
+        android:background="@drawable/rounded_corner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_marginRight="20dp" 
+        android:hint="@string/texto_peso" 
+        android:ems="10" 
+        android:layout_below="@id/divisor2" 
+        android:layout_alignLeft="@id/txtPeso" 
+        android:inputType="numberDecimal" />
+    <TextView 
+        android:textAppearance="?android:textAppearanceLarge" 
+        android:textColor="#ffffffff" 
+        android:id="@+id/txtAltura" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" 
+        android:text="@string/texto_altura" 
+        android:layout_below="@id/edtxtPeso" 
+        android:layout_alignLeft="@id/txtPeso" />
+    <View 
+        android:id="@+id/divisor3" 
+        android:background="@android:color/darker_gray" 
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_below="@id/txtAltura" />
+    <EditText 
+        android:id="@+id/edtxtAltura" 
+        android:background="@drawable/rounded_corner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="5dp" 
+        android:layout_marginRight="20dp" 
+        android:hint="@string/texto_altura" 
+        android:ems="10" 
+        android:layout_below="@id/divisor3" 
+        android:layout_alignLeft="@id/txtAltura" 
+        android:inputType="numberDecimal" />
+    <Button 
+        android:id="@+id/btnSalvar" 
+        android:background="@drawable/btn_pressionado" 
+        android:layout_width="100dp" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="50dp" 
+        android:text="@string/texto_salvar" 
+        android:layout_below="@id/edtxtAltura" 
+        android:layout_alignLeft="@id/txtAltura" 
+        android:onClick="eventoBotao" />
+    <Button 
+        android:id="@+id/btnTempos" 
+        android:background="@drawable/btn_pressionado" 
+        android:layout_width="100dp" 
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="20dp" 
+        android:text="@string/texto_tempos" 
+        android:layout_alignBaseline="@id/btnSalvar" 
+        android:layout_alignBottom="@id/btnSalvar" 
+        android:layout_alignParentRight="true" 
+        android:onClick="eventoBotao" />
+    <Button 
+        android:id="@+id/btnCalcular" 
+        android:background="@drawable/btn_pressionado" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="50dp" 
+        android:text="@string/texto_calcular" 
+        android:layout_below="@id/btnTempos" 
+        android:layout_centerHorizontal="true" 
+        android:onClick="eventoBotao" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EmForma</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="texto_nome">Nome</string>
+    <string name="texto_peso">Peso</string>
+    <string name="texto_altura">Altura</string>
+    <string name="texto_salvar">Salvar</string>
+    <string name="texto_tempos">Tempos</string>
+    <string name="texto_calcular">Calcular IMC</string>
+    <string name="texto_start">Start</string>
+    <string name="texto_lap">Lap</string>
+    <string name="title_activity_tela_tempos">TelaTempos</string>
+
+</resources>
